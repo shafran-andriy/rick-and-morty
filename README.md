@@ -1,4 +1,4 @@
-# rick-and-morty
+# Rick and Morty
 API for listing &amp; getting random characters from Rick &amp; Morty world
 
 ### Reqiurements:
