@@ -6,4 +6,10 @@ from characters.models import Character
 class CharacterSerializer(serializers.ModelSerializer):
     class Meta:
         model = Character
-        fields = ("id", "api_id", "name", "status", "species", "gender", "image")
+        fields = ("id",
+                  "api_id",
+                  "name",
+                  "status",
+                  "species",
+                  "gender",
+                  "image")
