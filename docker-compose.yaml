@@ -37,3 +37,29 @@ services:
     restart: on-failure
     env_file:
       - .env
+  
+  celery-beat:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: "celery -A rick_and_morty_api beat -l info --scheduler django_celery_beat.schedulers:DatabaseScheduler"
+    depends_on:
+      - web
+      - redis
+      - db
+    restart: on-failure
+    env_file:
+      - .env
+  
+  flower:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: "celery -A rick_and_morty_api flower address=0.0.0.0"
+    depends_on:
+      - celery
+    restart: on-failure
+    ports:
+      - "5555:5555"
+    env_file:
+      - .env
