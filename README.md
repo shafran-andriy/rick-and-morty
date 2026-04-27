@@ -18,6 +18,8 @@ API for listing &amp; getting random characters from Rick &amp; Morty world
 - Create venv: `python -m venv venv`
 - Activate it: `source venv/bin/activate`
 - Install requirementa: `pip install -r requirements.txt`
+- Create new Postgres DB & User
+- Copy .env.sample -> .env and populate with all required data
 - Run migrations: `python manage.py migrate`
 - Run Redis Server: `docker run -d -p 6379:6379 redis`
 - Run celery workers for tasks handling: `celery -A rick_and_morty_api worker -l INFO`
