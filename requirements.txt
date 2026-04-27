@@ -14,12 +14,7 @@ colorama==0.4.6
 cron-descriptor==1.4.5
 Django==6.0.4
 django-celery-beat==2.9.0
-django-rest-framework==0.1.0
-django-stubs==6.0.3
-django-stubs-ext==6.0.3
-django-timezone-field==7.2.1
 djangorestframework==3.17.1
-djangorestframework-stubs==3.16.9
 drf-spectacular==0.29.0
 idna==3.13
 inflection==0.5.1
