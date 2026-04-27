@@ -14,8 +14,15 @@ colorama==0.4.6
 cron-descriptor==1.4.5
 Django==6.0.4
 django-celery-beat==2.9.0
+django-rest-framework==0.1.0
+django-stubs==6.0.3
+django-stubs-ext==6.0.3
+django-timezone-field==7.2.1
 djangorestframework==3.17.1
+djangorestframework-stubs==3.16.9
 drf-spectacular==0.29.0
+flower==2.0.1
+humanize==4.15.0
 idna==3.13
 inflection==0.5.1
 jsonschema==4.26.0
@@ -25,6 +32,7 @@ mypy_extensions==1.1.0
 packaging==26.1
 pathspec==1.1.0
 platformdirs==4.9.6
+prometheus_client==0.25.0
 prompt_toolkit==3.0.52
 psycopg==3.3.3
 psycopg2-binary==2.9.12
@@ -32,6 +40,7 @@ python-crontab==3.3.0
 python-dateutil==2.9.0.post0
 python-dotenv==1.2.2
 pytokens==0.4.1
+pytz==2026.1.post1
 PyYAML==6.0.3
 redis==7.4.0
 referencing==0.37.0
@@ -39,6 +48,7 @@ requests==2.33.1
 rpds-py==0.30.0
 six==1.17.0
 sqlparse==0.5.5
+tornado==6.5.5
 types-PyYAML==6.0.12.20260408
 typing_extensions==4.15.0
 tzdata==2026.2
