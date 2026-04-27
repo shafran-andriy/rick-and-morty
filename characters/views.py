@@ -9,6 +9,7 @@ from rest_framework.response import Response
 
 from characters.models import Character
 from characters.serializers import CharacterSerializer
+from pagination import CharactersListPagination
 
 def get_random_character() -> Character:
     psk = Character.objects.values_list("pk", flat=True)
